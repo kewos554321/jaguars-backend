@@ -1,4 +1,4 @@
-package com.jaguars.core.controller;
+package com.jaguars.core.restcontroller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
