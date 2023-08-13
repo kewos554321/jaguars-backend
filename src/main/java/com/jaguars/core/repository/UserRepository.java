@@ -9,7 +9,9 @@ import com.jaguars.core.model.entity.UserEntity;
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
 	public Optional<UserEntity> findByUuid(String uuid);
+
+	public Optional<UserEntity> findByAccount(String account);
 	
-	public UserEntity findByEmail(String email);
+	public Optional<UserEntity> findByEmail(String email);
 
 }

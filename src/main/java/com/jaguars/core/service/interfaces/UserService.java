@@ -1,14 +1,16 @@
 package com.jaguars.core.service.interfaces;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.jaguars.core.model.entity.UserEntity;
+import com.jaguars.core.model.req.SignupRequest;
 
 public interface UserService {
 	
-	public UserEntity createUser(UserEntity user);
+	public UserEntity createUser(SignupRequest request);
 	
-	public UserEntity getUserByEmail(String email);
+	public Optional<UserEntity> getUserByEmail(String email);
 
 	public List<UserEntity> getAllUsers();
 
